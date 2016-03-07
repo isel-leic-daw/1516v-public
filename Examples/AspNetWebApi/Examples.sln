@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiSelfHostKatana", "WebApiSelfHostKatana\WebApiSelfHostKatana.csproj", "{4DC781EA-C7FB-4CE2-8B12-2C354F8A071F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{30BFFDD6-6984-403D-A85D-8D0B478F97E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HalExamples", "HalExamples\HalExamples.csproj", "{5667EE8F-FBF2-4F0F-9055-D10336D59DA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{4DC781EA-C7FB-4CE2-8B12-2C354F8A071F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DC781EA-C7FB-4CE2-8B12-2C354F8A071F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DC781EA-C7FB-4CE2-8B12-2C354F8A071F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30BFFDD6-6984-403D-A85D-8D0B478F97E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30BFFDD6-6984-403D-A85D-8D0B478F97E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30BFFDD6-6984-403D-A85D-8D0B478F97E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30BFFDD6-6984-403D-A85D-8D0B478F97E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5667EE8F-FBF2-4F0F-9055-D10336D59DA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5667EE8F-FBF2-4F0F-9055-D10336D59DA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5667EE8F-FBF2-4F0F-9055-D10336D59DA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5667EE8F-FBF2-4F0F-9055-D10336D59DA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
