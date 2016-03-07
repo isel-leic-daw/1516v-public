@@ -35,6 +35,6 @@
     * multiple servers
         * APIs as specifications
 
-* [REST is software engineering on the sacle of DECADES](http://www.slideshare.net/evolve_conference/201308-fielding-evolve)
+* [REST is software engineering on the scale of DECADES](http://www.slideshare.net/evolve_conference/201308-fielding-evolve)
 
 * [ProgrammableWeb API directory](http://www.programmableweb.com/apis/directory)
