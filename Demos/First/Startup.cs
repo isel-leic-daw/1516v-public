@@ -1,4 +1,5 @@
-﻿using Owin;
+﻿using Drum;
+using Owin;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,14 +14,15 @@ namespace First
         public void Configuration(IAppBuilder app)
         {
             var config = new HttpConfiguration();
+            //config.MapHttpAttributeRoutes();
+            config.MapHttpAttributeRoutesAndUseUriMaker();
             config.Routes.MapHttpRoute(
                 "route name",
-                "api/{controller}/{id:int}",
-                new { id = RouteParameter.Optional });
-            config.Routes.MapHttpRoute(
-                "route name 2",
-                "api/{controller}/{id2}",
-                new { id2 = RouteParameter.Optional });
+                "api/{controller}/{id}/{id2}",
+                new { id = RouteParameter.Optional, id2=123 }, // defaults
+                new { id = @"\d*"} // constraints
+                );
+            
             app.UseWebApi(config);
         }
     }
