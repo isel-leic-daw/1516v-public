@@ -1,3 +1,5 @@
+# collection representation
+
 collection
   version: "1.0"
   href: URI
@@ -35,3 +37,18 @@ collection
     title
     code
     message
+
+# queries
+x-form-uri-encoding on query string
+
+# creation and edition
+
+POST on collection URI - create item
+PUT on item URI - edit item
+DELETE on item URI - delete item
+
+
+template
+  data
+    name
+    value
