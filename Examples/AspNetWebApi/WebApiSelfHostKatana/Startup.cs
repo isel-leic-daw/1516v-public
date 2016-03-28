@@ -62,6 +62,7 @@ namespace WebApiSelfHostKatana
                 "api/{controller}");
             config.Formatters.Add(new ImageFromTextFormatter());
             config.Formatters.Remove(config.Formatters.XmlFormatter);
+            
             var jsonSettings = config.Formatters.JsonFormatter.SerializerSettings;
             jsonSettings.NullValueHandling = NullValueHandling.Ignore;
             jsonSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();

@@ -1,0 +1,37 @@
+collection
+  version: "1.0"
+  href: URI
+  items: array of objects
+    href: URI
+    data: array of objects
+      prompt
+      name
+      value
+    links: array of objects
+      href: URI
+      rel: string
+      prompt: string
+      name: string
+      render: link | image
+  links: array of objects
+    href: URI
+    rel: string
+    prompt: string
+    name: string
+    render: link | image
+  queries: array of objects
+    href: URI
+    rel: string
+    name: string
+    data: array of objects
+      name
+      value
+  template: object
+    data: array of objects
+      prompt
+      name
+      value
+  error: object
+    title
+    code
+    message
