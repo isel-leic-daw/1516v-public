@@ -88,6 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActionReturnController.cs" />
+    <Compile Include="ConsoleLogAttribute.cs" />
     <Compile Include="DirectRoutingController.cs" />
     <Compile Include="InputController.cs" />
     <Compile Include="Program.cs" />

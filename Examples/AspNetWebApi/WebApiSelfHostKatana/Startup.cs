@@ -65,6 +65,7 @@ namespace WebApiSelfHostKatana
             
             var jsonSettings = config.Formatters.JsonFormatter.SerializerSettings;
             jsonSettings.NullValueHandling = NullValueHandling.Ignore;
+            jsonSettings.DefaultValueHandling = DefaultValueHandling.Ignore;
             jsonSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
                         
             appBuilder.UseWebApi(config);

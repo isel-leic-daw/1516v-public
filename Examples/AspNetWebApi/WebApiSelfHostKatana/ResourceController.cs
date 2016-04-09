@@ -11,6 +11,7 @@ namespace WebApiSelfHostKatana
     public class ResourceController : ApiController
     {
         //public string Get()
+        [ConsoleLog]
         public Tuple<string,string> Get()
         {
             //return "Hello Web";
