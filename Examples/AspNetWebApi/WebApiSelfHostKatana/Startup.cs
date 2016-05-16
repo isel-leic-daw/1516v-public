@@ -10,14 +10,18 @@ using System.Web.Http;
 namespace WebApiSelfHostKatana
 {
     using Common;
+    using Microsoft.Owin;
+    using Microsoft.Owin.FileSystems;
+    using Microsoft.Owin.StaticFiles;
     using Newtonsoft.Json;
     using Newtonsoft.Json.Serialization;
     using Swashbuckle.Application;
     using System.IO;
+    using System.Web.Http.Cors;
     using System.Web.Http.Description;
     using AppFunc = Func<IDictionary<string, object>, Task>;
     using MidFunc = Func<
-        Func<IDictionary<string, object>, Task>, 
+        Func<IDictionary<string, object>, Task>,
         Func<IDictionary<string, object>, Task>>;
 
     public class Startup
@@ -73,7 +77,17 @@ namespace WebApiSelfHostKatana
             jsonSettings.NullValueHandling = NullValueHandling.Ignore;
             jsonSettings.DefaultValueHandling = DefaultValueHandling.Ignore;
             jsonSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
-                        
+
+            config.EnableCors(
+                new EnableCorsAttribute("*","*","*")
+                );
+
+            appBuilder.UseFileServer(new FileServerOptions()
+            {
+                RequestPath = PathString.Empty,
+                FileSystem = new PhysicalFileSystem(@".\..\..\content"),
+            });
+
             appBuilder.UseWebApi(config);
 
 
