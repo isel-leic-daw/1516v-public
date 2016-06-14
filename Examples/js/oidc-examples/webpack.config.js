@@ -26,7 +26,7 @@ module.exports = {
       ])      
   ]
   ,devServer: {
-    port: 8000,
+    port: 5000,
     outputPath: dirBuild,
     contentBase: dirBuild,
   },
